@@ -40,5 +40,5 @@ return {
   { "mason-org/mason.nvim", enabled = false },
   { "nvzone/minty", enabled = false },
   { "nvzone/menu", enabled = false },
-  { "nvzone/volt", enabled = false },
+  -- 
 }
