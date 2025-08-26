@@ -40,5 +40,7 @@ return {
   { "mason-org/mason.nvim", enabled = false },
   { "nvzone/minty", enabled = false },
   { "nvzone/menu", enabled = false },
+  { "lewis6991/gitsigns.nvim", enabled = false },
+  { "folke/which-key.nvim", enabled = false },
   -- 
 }
