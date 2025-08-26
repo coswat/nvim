@@ -28,19 +28,20 @@ return {
   {
     import = "nvchad.blink.lazyspec",
   },
-  -- Disable NvChad Plugins
-  { "lukas-reineke/indent-blankline.nvim", enabled = false },
-  { "nvim-tree/nvim-tree.lua", enabled = false },
-  { "hrsh7th/nvim-cmp", enabled = false },
-  { "saadparwaiz1/cmp_luasnip", enabled = false },
-  { "hrsh7th/cmp-nvim-lua", enabled = false },
-  { "hrsh7th/cmp-nvim-lsp", enabled = false },
-  { "hrsh7th/cmp-buffer", enabled = false },
-  { "https://codeberg.org/FelipeLema/cmp-async-path.git", enabled = false },
-  { "mason-org/mason.nvim", enabled = false },
-  { "nvzone/minty", enabled = false },
-  { "nvzone/menu", enabled = false },
-  { "lewis6991/gitsigns.nvim", enabled = false },
-  { "folke/which-key.nvim", enabled = false },
+
+-- Disable NvChad Plugins
+--   { "lukas-reineke/indent-blankline.nvim", enabled = false },
+--   { "nvim-tree/nvim-tree.lua", enabled = false },
+--   { "hrsh7th/nvim-cmp", enabled = false },
+--   { "saadparwaiz1/cmp_luasnip", enabled = false },
+--   { "hrsh7th/cmp-nvim-lua", enabled = false },
+--   { "hrsh7th/cmp-nvim-lsp", enabled = false },
+--   { "hrsh7th/cmp-buffer", enabled = false },
+--   { "https://codeberg.org/FelipeLema/cmp-async-path.git", enabled = false },
+--   { "mason-org/mason.nvim", enabled = false },
+--   { "nvzone/minty", enabled = false },
+--   { "nvzone/menu", enabled = false },
+--   { "lewis6991/gitsigns.nvim", enabled = false },
+--   { "folke/which-key.nvim", enabled = false },
   -- 
 }
