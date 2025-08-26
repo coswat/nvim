@@ -24,3 +24,7 @@ map("v", "<Up>", "<Nop>", opts)
 map("v", "<Down>", "<Nop>", opts)
 map("v", "<Left>", "<Nop>", opts)
 map("v", "<Right>", "<Nop>", opts)
+-- 
+
+-- map("n", "K", vim.lsp.buf.hover, opts)
+
