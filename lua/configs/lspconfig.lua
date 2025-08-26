@@ -16,8 +16,9 @@ M.on_attach = function(_, bufnr)
   map("n", "<leader>wl", function()
     print(vim.inspect(vim.lsp.buf.list_workspace_folders()))
   end, opts "List workspace folders")
+  map("n", "<leader>a", vim.lsp.buf.code_action, opts "LSP code actions")
+  map("n", "<leader>r", require "nvchad.lsp.renamer", opts "NvRenamer")
 
-  map("n", "<leader>ra", require "nvchad.lsp.renamer", opts "NvRenamer")
 end
 
 M.on_init = function(client, _)

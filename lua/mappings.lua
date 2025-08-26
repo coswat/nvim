@@ -25,6 +25,16 @@ map("v", "<Down>", "<Nop>", opts)
 map("v", "<Left>", "<Nop>", opts)
 map("v", "<Right>", "<Nop>", opts)
 -- 
+local telescope = require("telescope.builtin")
+map("n", "<leader>g", telescope.diagnostics, { desc = "LSP Diagnostics" })
 
--- map("n", "K", vim.lsp.buf.hover, opts)
-
+-- Close any opened window with <Esc> button
+map("n", "<Esc>", function()
+  for _, win in pairs(vim.api.nvim_list_wins()) do
+    local config = vim.api.nvim_win_get_config(win)
+    if config.relative ~= "" then
+      vim.api.nvim_win_close(win, true)
+      return
+    end
+  end
+end, { silent = true })
