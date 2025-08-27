@@ -17,7 +17,7 @@ return {
       require "nvchad"
     end,
   },
-  { "nvzone/volt", },
+  { "nvzone/volt" },
   {
     "nvim-tree/nvim-web-devicons",
     opts = function()
@@ -34,7 +34,7 @@ return {
     end,
   },
 
-  {
+{
     "nvim-telescope/telescope.nvim",
     dependencies = { "nvim-treesitter/nvim-treesitter" },
     cmd = "Telescope",
@@ -56,3 +56,4 @@ return {
     end,
   },
 }
+

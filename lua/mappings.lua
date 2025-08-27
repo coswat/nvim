@@ -6,34 +6,23 @@ local map = vim.keymap.set
 
 map("n", ";", ":", { desc = "CMD enter command mode" })
 map("i", "jk", "<ESC>")
+map("n", "<Space>", "<Nop>", { silent = true })
 
 -- Disabled arrow key movements for avoiding bad habbit
 local opts = { noremap = true, silent = true }
 
-map("n", "<Up>", "<Nop>", opts)
-map("n", "<Down>", "<Nop>", opts)
-map("n", "<Left>", "<Nop>", opts)
-map("n", "<Right>", "<Nop>", opts)
+map({ "n", "i", "v" }, "<Up>", "<Nop>", opts)
+map({ "n", "i", "v" }, "<Down>", "<Nop>", opts)
+map({ "n", "i", "v" }, "<Left>", "<Nop>", opts)
+map({ "n", "i", "v" }, "<Right>", "<Nop>", opts)
 
-map("i", "<Up>", "<Nop>", opts)
-map("i", "<Down>", "<Nop>", opts)
-map("i", "<Left>", "<Nop>", opts)
-map("i", "<Right>", "<Nop>", opts)
-
-map("v", "<Up>", "<Nop>", opts)
-map("v", "<Down>", "<Nop>", opts)
-map("v", "<Left>", "<Nop>", opts)
-map("v", "<Right>", "<Nop>", opts)
---
-
--- Twilight toggle mappigs 
+-- Twilight toggle mappigs
 map("n", "<leader>tw", "<cmd>Twilight<CR>", { desc = "Toggle Twilight" })
 
--- FZF Lua mappings 
+-- FZF Lua mappings
 -- map("n", "<leader>fa")
 
-
-local telescope = require("telescope.builtin")
+local telescope = require "telescope.builtin"
 map("n", "<leader>g", telescope.diagnostics, { desc = "LSP Diagnostics" })
 
 -- Close any opened window with <Esc> button
@@ -46,4 +35,3 @@ map("n", "<Esc>", function()
     end
   end
 end, { silent = true })
-
