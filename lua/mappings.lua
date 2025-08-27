@@ -24,7 +24,15 @@ map("v", "<Up>", "<Nop>", opts)
 map("v", "<Down>", "<Nop>", opts)
 map("v", "<Left>", "<Nop>", opts)
 map("v", "<Right>", "<Nop>", opts)
--- 
+--
+
+-- Twilight toggle mappigs 
+map("n", "<leader>tw", "<cmd>Twilight<CR>", { desc = "Toggle Twilight" })
+
+-- FZF Lua mappings 
+-- map("n", "<leader>fa")
+
+
 local telescope = require("telescope.builtin")
 map("n", "<leader>g", telescope.diagnostics, { desc = "LSP Diagnostics" })
 
@@ -38,3 +46,4 @@ map("n", "<Esc>", function()
     end
   end
 end, { silent = true })
+

@@ -29,6 +29,21 @@ return {
     import = "nvchad.blink.lazyspec",
   },
 
+  {
+    "folke/twilight.nvim",
+    opts = {},
+    cmd = "Twilight",
+
+  },
+
+{
+  "ibhagwan/fzf-lua",
+  -- optional for icon support
+  dependencies = { "nvim-tree/nvim-web-devicons" },
+  -- or if using mini.icons/mini.nvim
+  -- dependencies = { "echasnovski/mini.icons" },
+  opts = {}
+},
 -- Disable NvChad Plugins
 --   { "lukas-reineke/indent-blankline.nvim", enabled = false },
 --   { "nvim-tree/nvim-tree.lua", enabled = false },
