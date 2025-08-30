@@ -34,10 +34,4 @@ return {
     opts = {},
     cmd = "Twilight",
   },
-
-  {
-    "ibhagwan/fzf-lua",
-    dependencies = { "nvim-tree/nvim-web-devicons" },
-    opts = {},
-  },
 }

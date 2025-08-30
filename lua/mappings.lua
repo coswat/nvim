@@ -19,9 +19,6 @@ map({ "n", "i", "v" }, "<Right>", "<Nop>", opts)
 -- Twilight toggle mappigs
 map("n", "<leader>tw", "<cmd>Twilight<CR>", { desc = "Toggle Twilight" })
 
--- FZF Lua mappings
--- map("n", "<leader>fa")
-
 local telescope = require "telescope.builtin"
 map("n", "<leader>g", telescope.diagnostics, { desc = "LSP Diagnostics" })
 

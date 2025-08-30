@@ -18,7 +18,6 @@ M.on_attach = function(_, bufnr)
   end, opts "List workspace folders")
   map("n", "<leader>a", vim.lsp.buf.code_action, opts "LSP code actions")
   map("n", "<leader>r", require "nvchad.lsp.renamer", opts "NvRenamer")
-
 end
 
 M.on_init = function(client, _)
