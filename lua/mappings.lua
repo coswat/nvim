@@ -5,6 +5,8 @@ local map = vim.keymap.set
 map("n", ";", ":", { desc = "CMD enter command mode" })
 map("i", "jk", "<ESC>")
 map("n", "<Space>", "<Nop>", { silent = true })
+map("n", "9", "$", { noremap = true, silent = true })
+map({ "n", "i", "v" }, "<F1>", "<ESC>")
 
 -- Disabled arrow key movements for avoiding bad habbit
 local opts = { noremap = true, silent = true }
